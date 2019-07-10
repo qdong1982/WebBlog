@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<form class="form-signin" action="/register" method="POST">
+
+ <div class="text-center mb-4">
+  
+   <p>Register to Post Your Frustration</p>
+ </div>
+
+ <div class="form-label-group">
+   <input type="text" id="inputUsername" class="form-control" placeholder="Usename" name="username" required autofocus>
+   <label for="inputUsername">Username</label>
+ </div>
+
+ <div class="form-label-group">
+   <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+   <label for="inputPassword">Password</label>
+ </div>
+
+ <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+
+</form>
+<%- include('partials/footer') %>
